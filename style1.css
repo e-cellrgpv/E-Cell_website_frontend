@@ -461,6 +461,9 @@ line-height: 1.1em;
      font-weight: 300;
      text-transform: initial;
 }
+.imgBx{
+  margin-left: 8px;
+}
 
 .sci {
  position: absolute;   
