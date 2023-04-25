@@ -276,79 +276,77 @@ a {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
-  .section_title {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
+/* hero section  */
+.hero {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
-.section_title {
-    position: relative;
-    z-index: 1;
-    margin-top: 100px;
-    /* margin: 20px; */
+.row {
+  width: 80%;
+  max-width: 1270px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 30px;
 }
 
-
-
-.section_title h2 {
-    text-align: center;
-    font-weight: bold;
-    height: 20px;
-    letter-spacing: 2px;
-    color: #333;
-    padding-bottom: 10px;
+.row.left {
+  overflow: hidden;
 }
 
-.section_title h2::after {
-    content: '';
-    background: #1266f1;
-    display: block;
-    height: 5px;
-    width: 150px;
-    margin: 10px auto;
+.row.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
-.box1 {
-
-    color: black;
-    position: relative;
-    /* background-color: aqua; */
-    flex: 1;
-    left: 50px;
-    top: 66px;
-    display: flex;
+.row.right {
+  display: flex;
+  align-items: center;
 }
 
-
-.box1 h2 {
-    text-align: center;
-    font-weight: bold;
-    height: 20px;
-    letter-spacing: 2px;
-    color: #333;
-    padding-bottom: 10px;
-    font-size: 40px;
+.row .right .content {
+  padding-left: 20px;
+  margin-top: 100px;
 }
 
-.box1 h2::after {
-    content: '';
-    background: #1266f1;
-    display: block;
-    height: 5px;
-    width: 150px;
-    margin: 10px auto;
+.row .right .content p {
+  font-size: 50px;
+  line-height: 56px;
+  /* padding-bottom: 26px; */
+  /* text-align: center; */
+  font-weight: italic;
+  /* height: 20px; */
+  letter-spacing: 2px;
+  color: #333;
+  /* padding-bottom: 10px; */
 }
 
-.box2 {
+.row .right .content p::after {
+  content: '';
+  background: #1266f1;
+  display: block;
+  height: 5px;
+  width: 200px;
+  margin-top: 10px;
+  /* margin: 10px auto; */
+}
 
-    /* color:white;
-    background-color: red; */
-    position: relative;
-    display: flex;
-    right: 120px;
-    
+@media (max-width:991px) {
+  .row.right.content {
+      padding-left: 0;
+  }
+}
+
+@media (max-width:768px) {
+  .row {
+      width: 90%;
+      grid-template-columns: 1fr
+  }
 }
 
   
@@ -464,7 +462,6 @@ line-height: 1.1em;
 .imgBx{
   margin-left: 8px;
 }
-
 .sci {
  position: absolute;   
  bottom: 50px;
