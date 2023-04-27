@@ -602,7 +602,12 @@ footer .sci li a:hover{
     .container2 p {
         text-align: left;
     }
-
+ .About {
+  width: 80%;
+ }
+ .goal {
+  width: 80%;
+ }
 }
 
 /* Media Queries */
